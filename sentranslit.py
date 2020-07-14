@@ -220,6 +220,7 @@ def sentranslit(sentence,if_num=True,if_sym=True,if_han=True,if_eng=True,if_punc
 ''' ## If KoG2P directory is cloned
 from KoG2P.g2p import runKoG2P
 '''
+from KoG2P.g2p import runKoG2P
 
 ''' ## If G2pK is successfully installed
 from g2p import G2p
