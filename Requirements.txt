@@ -12,7 +12,7 @@ Keras-Preprocessing==1.1.0
 konlpy==0.5.2
 nltk==3.4.5
 numpy==1.18.2
-python-mecab==1.0.1
+g2pk==0.9.4
 PyYAML==5.3.1
 regex==2020.2.20
 scipy==1.4.1
