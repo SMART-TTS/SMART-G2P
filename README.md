@@ -36,7 +36,7 @@ In python console:
 If you installed *KoG2P* or *g2pK*, then uncomment either of the followings in *sentranslit.py*:
 ```python
 ## The default setting is g2pK, which is set along with this package
-from g2p import G2p
+from g2pk import G2p
 g2p = G2p()
 
 ## If KoG2P directory is cloned
