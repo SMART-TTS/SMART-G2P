@@ -35,12 +35,12 @@ In python console:
 
 If you installed *KoG2P* or *g2pK*, then uncomment either of the followings in *sentranslit.py*:
 ```python
-## If KoG2P directory is cloned
-from KoG2P.g2p import runKoG2P
-
-## If G2pK is successfully installed
+## The default setting is g2pK, which is set along with this package
 from g2p import G2p
 g2p = G2p()
+
+## If KoG2P directory is cloned
+from KoG2P.g2p import runKoG2P
 ```
 You can choose the format of the outcome, English alphabets or Korean characters, by choosing *KoG2P* and *g2pK* respectively. For example, the following yields *g2pK* result, which is the default setting. For *KoG2P* result, add *out_type = 'eng'*.
 ```
