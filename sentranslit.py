@@ -222,7 +222,7 @@ from KoG2P.g2p import runKoG2P
 '''
 
 ## If G2pK is successfully installed
-from g2p import G2p
+from g2pk import G2p
 g2p = G2p()
 
 def mixed_g2p(sentence,out_type='kor'):
