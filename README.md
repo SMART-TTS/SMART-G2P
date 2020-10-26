@@ -42,9 +42,10 @@ from KoG2P.g2p import runKoG2P
 from g2p import G2p
 g2p = G2p()
 ```
-You can choose the format of the outcome, English alphabets or Korean characters, by choosing *KoG2P* and *g2pK* respectively. For example, the following yields *g2pK* result. The default setting gives *KoG2P* counterpart.
+You can choose the format of the outcome, English alphabets or Korean characters, by choosing *KoG2P* and *g2pK* respectively. For example, the following yields *g2pK* result, which is the default setting. For *KoG2P* result, add *out_type = 'eng'*.
 ```
->>> mixed_g2p(sentence,out_type='kor'):
+>>> mixed_g2p('1999년 8월29일은 john가 mary을 만난 날로 매년 3시15분 방 3-147에서 의식이 거행된다')
+'천구백꾸십꾸년 파뤄리십꾸이른 조니 메리를 만난 날로 매년 세시시보분 방 삼다시일사치레서 의시기 거행된다'
 ```
 
 ## Acknowledgement
