@@ -1,7 +1,7 @@
 import hgtk
 import hanja
-from mecab import Tagger
-tagger = Tagger()
+import mecab
+mecab = mecab.MeCab()
 
 from predict import return_trans
 from utils import decide_acronym, read_acronym
@@ -16,7 +16,7 @@ data_dict = {re.sub(' +', ' ',dataset[i][0]).lower(): re.sub(' +', ' ',dataset[i
 
 def align_particles(sentence):
     s = sentence.split()
-    particles = tagger.parse(sentence)
+    particles = mecab.pos(sentence)
     chunks = []
     final  = False
     if len(particles) > 0:
@@ -221,14 +221,12 @@ def sentranslit(sentence,if_num=True,if_sym=True,if_han=True,if_eng=True,if_punc
 from KoG2P.g2p import runKoG2P
 '''
 
-''' ## If G2pK is successfully installed
+## If G2pK is successfully installed
 from g2p import G2p
 g2p = G2p()
-'''
 
-def mixed_g2p(sentence,out_type='eng'):
-    if out_type == 'kor':
-        return g2p(sentence)
+def mixed_g2p(sentence,out_type='kor'):
+    if out_type == 'eng':
+        return runKoG2P(trans(sentence),'KoG2P/rulebook.txt')g2p(trans(sentence))
     else:
-        return runKoG2P(sentence,'KoG2P/rulebook.txt')
-
+        return g2p(trans(sentence))
