@@ -169,7 +169,7 @@ josa_o = ['은','이','과','을','이다']
 josa_x = ['는','가','와','를','다']
 
 def decide_josa(context,term):
-    if hgtk.checker.is_hangul(context):
+    if hgtk.checker.is_hangul(context) and context!= '':
         dec = (hgtk.letter.decompose(context[-1])[2] != '') # If third sound is non-empty
         if term in josa_o and not dec:
             return josa_x[josa_o.index(term)]
