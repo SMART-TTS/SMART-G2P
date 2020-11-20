@@ -52,7 +52,28 @@ You can choose the format of the outcome, English alphabets or Korean characters
 We sincerely thank [Muik Jeon](https://github.com/muik) for letting us utilize the dataset from [transliteration](https://github.com/muik/transliteration) repository. 
 
 ## ToDo
-- Enhance DL-based en-ko transliteration (via Transformer?)
+- Enhance DL-based en-ko transliteration (via Transformer?) (DONE)
 - Elaborate number and symbol readings in Korean context
 - Add corpus-level processing function
 - Develop new DL-based G2P that considers polysemy
+
+## Citation
+If you have found our module useful, please consider citing the following:
+```
+@inproceedings{cho-etal-2020-towards,
+    title = "Towards an Efficient Code-Mixed Grapheme-to-Phoneme Conversion in an Agglutinative Language: A Case Study on To-{K}orean Transliteration",
+    author = "Cho, Won Ik  and
+      Kim, Seok Min  and
+      Kim, Nam Soo",
+    booktitle = "Proceedings of the The 4th Workshop on Computational Approaches to Code Switching",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://www.aclweb.org/anthology/2020.calcs-1.9",
+    pages = "65--70",
+    abstract = "Code-mixed grapheme-to-phoneme (G2P) conversion is a crucial issue for modern speech recognition and synthesis task, but has been seldom investigated in sentence-level in literature. In this study, we construct a system that performs precise and efficient multi-stage code-mixed G2P conversion, for a less studied agglutinative language, Korean. The proposed system undertakes a sentence-level transliteration that is effective in the accurate processing of Korean text. We formulate the underlying philosophy that supports our approach and demonstrate how it fits with the contemporary document.",
+    language = "English",
+    ISBN = "979-10-95546-66-5",
+}
+```
