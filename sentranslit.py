@@ -89,7 +89,7 @@ def trans_latin(term): ## Rule and training hybrid transliteration
         if decide_acronym(term):
             return read_acronym(term)
         else:
-            return return_trans(term) ## Tentative
+            return tft(term) ## Transformer-based
 
 def decide_context(term,chunks,eojeol,i,j):
     if len(chunks) == 1: ## Only one eojeol
