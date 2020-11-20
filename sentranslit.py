@@ -4,6 +4,7 @@ import mecab
 mecab = mecab.MeCab()
 
 #from predict import return_trans
+from trans import transformer_transliteration as tft
 from utils import decide_acronym, read_acronym
 from utils import readNumberKor, readNumberEng, readNumber, readBigNum, readOnlyNum
 from utils import dataset, small, big, real_latin
