@@ -228,6 +228,6 @@ g2p = G2p()
 
 def mixed_g2p(sentence,out_type='kor'):
     if out_type == 'eng':
-        return runKoG2P(trans(sentence),'KoG2P/rulebook.txt')g2p(trans(sentence))
+        return runKoG2P(trans(sentence),'KoG2P/rulebook.txt')
     else:
         return g2p(trans(sentence))
