@@ -3,13 +3,13 @@
 본 코드는 2020년도 과학기술통신부의 재원으로 정보통신기획평가원(IITP)의 지원을 받아 수행한 "소량 데이터만을 이용한 고품질 종단형 기반의 딥러닝 다화자 운율 및 감정 복제 기술 개발" 과제의 일환으로 공개된 코드입니다. 본 모델의 특징은 다음과 같습니다.
 
 - 영어, 한문 등을 포함한 한국어 문장에 대해 해당 표현들을 한국어 발음으로 변경
-- 추가적인 라이브러리 (KoG2P 혹은 g2pK) 활용을 통해, 한국어 문장을 발음열로 변환
+- 추가적인 라이브러리 ([KoG2P](https://github.com/scarletcho/KoG2P) 혹은 [g2pK](https://github.com/Kyubyong/g2pK)) 활용을 통해, 한국어 문장을 발음열로 변환
 - 영어, 한문, 숫자, 특수기호 등을 포함한 문장에서 선택적으로 한국어 발음 변경 여부를 결정
 
 This repository is the official implementation of SMART-G2P, where the development of the algorithm and code was supported by IITP. Our module has the following features:
 
 - Change the English and Kanji expressions in Korean sentence into Korean pronunciation
-- Transform the grapheme sequence to phoneme sequence with the help of other g2p libraries (e.g., KoG2P, g2pK)
+- Transform the grapheme sequence to phoneme sequence with the help of other G2P libraries (e.g., KoG2P, g2pK)
 - Decide whether to transliterate specific expressions (English, Kanji, numbers, and special symbols) upon user's choice
 
 ## Environment
@@ -75,7 +75,7 @@ You can choose the format of the outcome, English alphabets or Korean characters
 ```
 
 ## Acknowledgement
-We sincerely thank [Muik Jeon](https://github.com/muik) for letting us utilize the dataset from [transliteration](https://github.com/muik/transliteration) repository. 
+We sincerely thank [Muik Jeon](https://github.com/muik) for letting us utilize the dataset from [transliteration](https://github.com/muik/transliteration) repository. Also, we appreciate all the contributors of the open libraries we found essential in our implementation.
 
 ## ToDo
 - Elaborate number and symbol readings in Korean context
@@ -83,7 +83,7 @@ We sincerely thank [Muik Jeon](https://github.com/muik) for letting us utilize t
 - Develop new DL-based G2P that considers polysemy
 
 ## Citation
-If you have found our module useful, please consider citing the following:
+If you have found our module useful, please consider citing the following [paper](https://www.aclweb.org/anthology/2020.calcs-1.9):
 ```
 @inproceedings{cho-etal-2020-towards,
     title = "Towards an Efficient Code-Mixed Grapheme-to-Phoneme Conversion in an Agglutinative Language: A Case Study on To-{K}orean Transliteration",
