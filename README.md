@@ -36,7 +36,7 @@ pip install https://github.com/Kyubyong/g2pK
 ```
 
 ## HowTo
-For GPU setting, please check the following in *trans.py* and set appropriate device in your local:
+For GPU setting, please check the following in *infer.py* and set appropriate device in your local:
 ```python
 os.environ["CUDA_VISIBLE_DEVICES"]='1'
 ```
