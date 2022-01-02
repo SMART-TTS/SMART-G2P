@@ -35,7 +35,7 @@ git clone https://github.com/scarletcho/KoG2P
 pip install https://github.com/Kyubyong/g2pK
 ```
 
-## HowTo
+## How To
 For GPU setting, please check the following in *infer.py* and set appropriate device in your local:
 ```python
 os.environ["CUDA_VISIBLE_DEVICES"]='1'
@@ -81,7 +81,7 @@ You can choose the format of the outcome, English alphabets or Korean characters
 ## Acknowledgement
 We sincerely thank [Muik Jeon](https://github.com/muik) for letting us utilize the dataset from [transliteration](https://github.com/muik/transliteration) repository. Also, we appreciate all the contributors of the open libraries we found essential in our implementation.
 
-## ToDo
+## To Do
 - Elaborate number and symbol readings in Korean context
 - Add corpus-level processing function
 - Develop new DL-based G2P that considers polysemy
@@ -106,3 +106,9 @@ If you have found our module useful, please consider citing the following [paper
     ISBN = "979-10-95546-66-5",
 }
 ```
+
+## Technical Report
+
+Specification of this implementation can be found in the [technical report](https://www.dropbox.com/s/fow2d0nk5x2d70f/SMART-G2P.pdf?dl=0).
+
+본 프로젝트 관련 개선사항들에 대한 기술문서는 [여기](https://www.dropbox.com/s/fow2d0nk5x2d70f/SMART-G2P.pdf?dl=0)를 참고해 주세요.
