@@ -20,6 +20,6 @@ scipy==1.4.1
 sentencepiece==0.1.86
 tensorboard==2.1.1
 tensorflow-estimator==2.1.0
-tensorflow-gpu==2.1.0
+tensorflow-gpu==2.5.3
 torch==1.7.0
 tqdm==4.43.0
