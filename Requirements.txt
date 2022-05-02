@@ -14,7 +14,7 @@ konlpy==0.5.2
 nltk==3.4.5
 numpy==1.18.2
 g2pk==0.9.4
-PyYAML==5.3.1
+PyYAML==5.4
 regex==2020.2.20
 scipy==1.4.1
 sentencepiece==0.1.86
