@@ -141,7 +141,7 @@ def readNumber(n):
         n, r = divmod(n, 10)
         if r > 0:
             result.append(units[i])
-            if r > 1:
+            if r >= 1:
                 result.append(nums[r-1])
         i += 1
     return ''.join(result[::-1])
